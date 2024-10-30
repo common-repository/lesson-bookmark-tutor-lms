@@ -1,0 +1,135 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Lesson Bookmark for Tutor LMS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-24 08:31+0000\n"
+"PO-Revision-Date: 2023-07-11 07:26+0000\n"
+"Last-Translator: \n"
+"Language-Team: Français\n"
+"Language: fr_FR\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.2; wp-5.7.2\n"
+"X-Domain: lesson-bookmark-tutor-lms"
+
+#: lesson-bookmark-tutor-lms.php:100
+msgid ""
+"<em>Lesson Bookmark for Tutor LMS</em> requires <em>Tutor LMS</em> to be "
+"installed and active."
+msgstr ""
+"<em>Lesson Bookmark for Tutor LMS</em> nécessite que le plugin <em>Tutor "
+"LMS</em> soit installé et activé."
+
+#: public/class-tutor-lms-lesson-bookmark-public.php:103
+#: public/class-tutor-lms-lesson-bookmark-public.php:150
+msgid "Bookmark"
+msgstr "Ajouter aux favoris"
+
+#: public/class-tutor-lms-lesson-bookmark-public.php:202
+#, php-format
+msgid "Course: %s"
+msgstr "Cours : %s"
+
+#. Author URI of the plugin
+msgid "https://lekcie.com"
+msgstr "https://lekcie.com"
+
+#. URI of the plugin
+msgid "https://lekcie.com/plugins-wordpress/"
+msgstr "https://lekcie.com/plugins-wordpress/"
+
+#: admin/class-tutor-lms-lesson-bookmark-admin.php:128
+msgid "It only takes 1 min"
+msgstr "Ca prend 1 minute"
+
+#. Author of the plugin
+msgid "Lekcie"
+msgstr "Lekcie"
+
+#: admin/partials/lesson-bookmark-menu-admin-display.php:34
+#, php-format
+msgid "Lesson %d"
+msgstr "Leçon %d"
+
+#: admin/class-tutor-lms-lesson-bookmark-admin.php:150
+#: admin/class-tutor-lms-lesson-bookmark-admin.php:151
+msgid "Lesson bookmark"
+msgstr ""
+
+#. Name of the plugin
+msgid "Lesson Bookmark for Tutor LMS"
+msgstr "Lesson Bookmark for Tutor LMS"
+
+#. Description of the plugin
+#| msgid ""
+#| "Tutor LMS Lesson Bookmark allows to add lessons in the list of your "
+#| "favorite lessons and to display the favorites with the shortcode "
+#| "`[tllb_display_favorites]`"
+msgid ""
+"Lesson Bookmark for Tutor LMS allows to add lessons in the list of your "
+"favorite lessons and to display the favorites with the shortcode "
+"`[tllb_display_favorites]`"
+msgstr ""
+"Lesson Bookmark for Tutor LMS permet d'ajouter des chapitres dans la liste "
+"de vos chapitres préférés et d'afficher les favoris avec le shortcode "
+"`[tllb_display_favorites]`"
+
+#: public/class-tutor-lms-lesson-bookmark-public.php:144
+#: public/class-tutor-lms-lesson-bookmark-public.php:157
+msgid "Lesson successfully bookmarked"
+msgstr "Chapitre ajouté aux favoris avec succès"
+
+#: public/class-tutor-lms-lesson-bookmark-public.php:149
+msgid "Lesson successfully removed from bookmarks"
+msgstr "Chapitre retiré des favoris avec succès"
+
+#: public/class-tutor-lms-lesson-bookmark-public.php:200
+#, php-format
+msgid "Lesson: %s"
+msgstr "Chapitre : %s"
+
+#: admin/partials/lesson-bookmark-menu-admin-display.php:36
+msgid "Lesson: Lesson - Course: Course"
+msgstr "Leçon : Leçon - Cours : Cours"
+
+#: admin/class-tutor-lms-lesson-bookmark-admin.php:134
+msgid "Maybe later"
+msgstr "Peut-être plus tard"
+
+#: admin/class-tutor-lms-lesson-bookmark-admin.php:135
+msgid "Nope, I don't want to help :("
+msgstr "Non, je ne veux pas aider :("
+
+#: admin/class-tutor-lms-lesson-bookmark-admin.php:133
+msgid "Post a review"
+msgstr "Mettre un avis"
+
+#: public/class-tutor-lms-lesson-bookmark-public.php:103
+#: public/class-tutor-lms-lesson-bookmark-public.php:145
+#: public/class-tutor-lms-lesson-bookmark-public.php:158
+msgid "Remove Bookmark"
+msgstr "Retirer des favoris"
+
+#: public/class-tutor-lms-lesson-bookmark-public.php:207
+msgid "Remove this bookmark"
+msgstr "Retirer des favoris"
+
+#: public/class-tutor-lms-lesson-bookmark-public.php:205
+#: admin/partials/lesson-bookmark-menu-admin-display.php:37
+msgid "See lesson"
+msgstr "Voir chapitre"
+
+#: admin/class-tutor-lms-lesson-bookmark-admin.php:130
+msgid ""
+"Wonderful! You have been using Lesson Bookmark for Tutor LMS for more than a "
+"week. <b>Help us</b> and tell us what you think"
+msgstr ""
+"Super ! Vous utilisez Lesson Bookmark for Tutor LMS depuis plus d'une "
+"semaine. <b>Aidez-nous</b> et dites-nous ce que vous en pensez"
+
+#: public/class-tutor-lms-lesson-bookmark-public.php:219
+msgid "You don't have bookmarked lessons yet"
+msgstr "Vous n'avez pas encore de chapitre favori"

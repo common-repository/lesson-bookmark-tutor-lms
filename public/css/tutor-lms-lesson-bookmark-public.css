@@ -1,0 +1,165 @@
+/**
+* All of the CSS for your public-facing functionality should be
+* included in this file.
+*/
+
+.add-to-favorites {
+	position: absolute;
+	top: 80px;
+	right: 10px;
+	padding: 5px 15px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	color: #1da3c9;
+	transition: 0.3s all ease-in-out;
+}
+
+.add-to-favorites:hover {
+	background-color: #1da3c9;
+	color: #fff;
+}
+
+.add-to-favorites .dashicons.dashicons-heart {
+	margin-right: 5px;
+	color: #c9c9c9;
+}
+
+.add-to-favorites.is-favorite .dashicons.dashicons-heart {
+	color: #c73b3b;
+}
+
+.add-to-favorites[data-can-load="false"] {
+	background: #ececec;
+	color: #838383;
+}
+
+.tlms-popup-response {
+	position: fixed;
+	top: 50px;
+	right: 40px;
+	z-index: 1;
+	background: #ffffff;
+	padding: 10px 20px;
+	box-shadow: 0 0 20px #d8d8d8;
+	color: #1da3c9;
+	transition: 0.3s all ease-in-out;
+	font-size: 18px;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.tlms-popup-response.show {
+	visibility: visible;
+	opacity: 1;
+	z-index: 9999;
+}
+
+.tlms-favorites {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.tlms-favorites.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 20px;
+}
+
+.tlms-favorite-container {
+	position: relative;
+}
+
+.tlms-favorite-container.frozen {
+	cursor: progress;
+}
+
+.tlms-favorite-container.frozen::before {
+	content: '';
+	background-color: #00000075;
+	width: 100%;
+	display: block;
+	height: 100%;
+	position: absolute;
+	z-index: 10;
+}
+
+.tlms-favorite {
+	padding: 10px 10px 10px 40px;
+	box-shadow: 0 0 10px #828282;
+	margin-bottom: 20px;
+	position: relative;
+	background: #fff;
+}
+
+.tlms-favorite .dashicons.dashicons-heart {
+	position: absolute;
+	top: 18px;
+	left: 10px;
+	color: #c73b3b;
+}
+
+.tlms-fav-bottom {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	flex-wrap: wrap;
+	align-items: baseline;
+}
+
+.tlms-fav-subtitle {
+	margin-bottom: 10px;
+}
+
+.tlms-fav-see-lesson a {
+	display: flex;
+	background: #1da3c9;
+	align-items: center;
+	color: #fff;
+	border-radius: 5px;
+	padding: 3px 10px;
+	text-decoration: unset !important;
+}
+
+.tlms-fav-see-lesson a span {
+	margin-right: 5px;
+}
+
+.tlms-fav-time {
+	position: absolute;
+	top: 4px;
+	right: 12px;
+	font-size: 13px;
+	color: #808080;
+}
+
+.tlms-fav-title {
+	font-size: 25px;
+	line-height: 30px;
+	padding-bottom: 5px;
+}
+
+.tlms-favorite .quick-remove-bookmark {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	cursor: pointer;
+}
+
+@media (max-width: 767px) {
+	.tlms-fav-see-lesson {
+		position: relative;
+		bottom: unset;
+		right: unset;
+		padding-top: 10px;
+		display: block;
+	}
+
+	.tlms-fav-see-lesson a {
+		width: max-content;
+	}
+
+	.tlms-favorite {
+		padding: 10px 60px 10px 40px;
+	}
+}

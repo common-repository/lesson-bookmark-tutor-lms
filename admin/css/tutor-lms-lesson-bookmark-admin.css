@@ -1,0 +1,251 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+:root {
+    --border-color: #e4e4e4;
+    --color-white: #f9f9f9;
+    --color-blue: #1da3c9;
+}
+
+/*
+* Overview
+*/
+#overview {
+    padding: 10px 30px;
+    flex-grow: 1;
+    margin-left: 40px;
+    height: fit-content;
+    position: sticky;
+    top: 70px;
+    margin-top: 40px;
+    border: solid 1px var(--border-color);
+    background: var(--color-white);
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+#overview::before {
+    content: "\f139";
+    font-family: "dashicons";
+    font-size: 60px;
+    position: absolute;
+    left: -53px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.tlms-favorites {
+    max-width: 800px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    display: block;
+}
+
+.tlms-favorites.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
+.tlms-favorite-container {
+    position: relative;
+}
+
+.tlms-favorite {
+    padding: 10px 10px 10px 40px;
+    box-shadow: 0 0 10px #828282;
+    margin-bottom: 20px;
+    position: relative;
+    background: #fff;
+}
+
+.tlms-favorite .dashicons.dashicons-heart {
+    position: absolute;
+    top: 18px;
+    left: 10px;
+    color: #c73b3b;
+}
+
+.tlms-fav-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+.tlms-fav-subtitle {
+    margin-bottom: 10px;
+}
+
+.tlms-fav-see-lesson a {
+    display: flex;
+    background: var(--color-blue);
+    align-items: center;
+    color: #fff;
+    border-radius: 5px;
+    padding: 3px 10px;
+    text-decoration: unset !important;
+}
+
+.tlms-fav-see-lesson a span {
+    margin-right: 5px;
+}
+
+.tlms-fav-time {
+    position: absolute;
+    top: 4px;
+    right: 12px;
+    font-size: 13px;
+    color: #808080;
+}
+
+.tlms-fav-title {
+    line-height: 30px;
+    padding-bottom: 5px;
+}
+
+.tlms-favorite .quick-remove-bookmark {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+/*
+* Form
+*/
+#lms_form_container {
+    display: flex;
+    width: 100%;
+}
+
+#lms_form {
+    font-size: 16px;
+    max-width: 550px;
+    flex-basis: 450px;
+    min-width: 450px;
+}
+
+#lms_form fieldset {
+    border: solid 1px var(--border-color);
+    margin-top: 30px;
+    background: var(--color-white);
+    border-radius: 10px;
+    padding: 0 20px 20px;
+}
+
+#lms_form fieldset legend {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+    padding-left: 0;
+    margin-left: -5px;
+}
+
+.lms-container-section {
+    border-left: solid 1px var(--border-color);
+    margin-bottom: 20px;
+    margin-top: 40px;
+    position: relative;
+}
+
+.lms-container {
+    padding: 5px;
+    padding-left: 10px;
+}
+
+#lms_nb_cols_block {
+    display: none;
+}
+
+#lms_nb_cols_block.show {
+    display: block;
+}
+
+.lms-container h4, .lms-container-section h4, .lms-container h5 {
+    color: #7a7a7a;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.lms-container-section h4 {
+    position: absolute;
+    top: -23px;
+    margin: 0;
+    left: -5px;
+}
+
+.lms-radio {
+    display: inline-block;
+    border: solid 1px var(--border-color);
+    padding: 10px;
+    border-radius: 10px;
+    min-width: 110px;
+    margin-right: 20px;
+    transition: 0.3s all ease-in-out;
+    font-weight: 500;
+}
+
+.lms-radio:hover, .lms-radio.checked {
+    border-color: var(--color-blue);
+    color: var(--color-blue);
+}
+
+.lms-radio .dashicons {
+    margin-left: 10px;
+}
+
+.lms-radio .dashicons.rotate {
+    transform: rotate(90deg);
+}
+
+#lms_form input:not([type="radio"]):not([type="submit"]), #lms_form select {
+    background: transparent;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 1px var(--border-color);
+    line-height: 1;
+    width: 100%;
+    transition: 0.3s all ease-in-out;
+}
+
+#lms_form input:focus, #lms_form select:focus {
+    background-color: #fff;
+    border-color: var(--color-blue);
+}
+
+#lms_form .lms-2-col {
+    display: flex;
+}
+
+#lms_form .lms-2-col input, #lms_form .lms-2-col select {
+    width: 60px !important;
+}
+
+#lms_form .select-container {
+    position: relative;
+}
+
+#lms_form .select-container select {
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+#lms_form .select-container .dashicons {
+    top: 50%;
+    position: absolute;
+    right: 5px;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+.shortcode-content {
+    background: #e8e8e8;
+    border: solid 1px #aaa;
+    padding: 8px 10px;
+    font-size: 15px;
+    border-radius: 6px;
+    display: inline-block;
+}
